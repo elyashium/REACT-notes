@@ -1,0 +1,34 @@
+{
+    "version": 3,
+    "file": "script.js",
+    "names": [
+        "container",
+        "React",
+        "createElement",
+        "className",
+        "id",
+        "key",
+        "style",
+        "width",
+        "backgroundColor",
+        "borderRadius",
+        "padding",
+        "src",
+        "htmlFor",
+        "type",
+        "root",
+        "ReactDOM",
+        "createRoot",
+        "document",
+        "querySelector",
+        "render"
+    ],
+    "sources": [
+        "../script.js"
+    ],
+    "sourcesContent": [
+        "\r\n//creating element in react \r\n\r\n\r\nconst container = React.createElement('div', { className: 'container', id: 'container' },\r\n\r\n    //passing array in children\r\n\r\n    [\r\n        React.createElement('section', { key: 1 }, [  //key can be same in the case of parent-child but different in case of siblings.\r\n \r\n            React.createElement(\r\n                'p',\r\n                { key: 1 },\r\n                'The library for web and native user interfaces'\r\n            ),\r\n\r\n            React.createElement('img', {\r\n                key: 2,\r\n                style: {\r\n                    width: 200,\r\n                    backgroundColor: 'teal',\r\n                    borderRadius: 8,\r\n                    padding: 16,\r\n                },\r\n                src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',\r\n            }),\r\n        ]),\r\n\r\n        React.createElement('section', { key: 2 }, [\r\n\r\n            React.createElement('form', { key: 1 }, [\r\n\r\n                React.createElement('div', { className: 'input-group', key: 1 }, [\r\n\r\n                    React.createElement(\r\n                        'label',\r\n                        { key: 1, htmlFor: 'username' },\r\n                        'Username'\r\n                    ),\r\n\r\n                    React.createElement('input', { key: 2, id: 'username' }),\r\n                ]),\r\n\r\n                React.createElement('div', { className: 'input-group', key: 2 }, [\r\n\r\n                    React.createElement(\r\n                        'label',\r\n                        { key: 1, htmlFor: 'password' },\r\n                        'Password'\r\n                    ),\r\n\r\n                    React.createElement('input', { key: 2, id: 'password', type: 'password' }),\r\n                ]),\r\n            ]),\r\n        ]),\r\n    ]\r\n)\r\n\r\nconst root = ReactDOM.createRoot(document.querySelector('#root'))\r\n\r\nroot.render(container)"
+    ],
+    "mappings": "AACA;;AAGA,MAAMA,SAAS,GAAGC,KAAK,CAACC,aAAa,CAAC,KAAK,EAAE;EAAEC,SAAS,EAAE,WAAW;EAAEC,EAAE,EAAE;AAAY,CAAC;AAEpF;;AAEA,CACIH,KAAK,CAACC,aAAa,CAAC,SAAS,EAAE;EAAEG,GAAG,EAAE;AAAE,CAAC,EAAE;AAAG;;AAE1CJ,KAAK,CAACC,aAAa,CACf,GAAG,EACH;EAAEG,GAAG,EAAE;AAAE,CAAC,EACV,gDACJ,CAAC,EAEDJ,KAAK,CAACC,aAAa,CAAC,KAAK,EAAE;EACvBG,GAAG,EAAE,CAAC;EACNC,KAAK,EAAE;IACHC,KAAK,EAAE,GAAG;IACVC,eAAe,EAAE,MAAM;IACvBC,YAAY,EAAE,CAAC;IACfC,OAAO,EAAE;EACb,CAAC;EACDC,GAAG,EAAE;AACT,CAAC,CAAC,CACL,CAAC,EAEFV,KAAK,CAACC,aAAa,CAAC,SAAS,EAAE;EAAEG,GAAG,EAAE;AAAE,CAAC,EAAE,CAEvCJ,KAAK,CAACC,aAAa,CAAC,MAAM,EAAE;EAAEG,GAAG,EAAE;AAAE,CAAC,EAAE,CAEpCJ,KAAK,CAACC,aAAa,CAAC,KAAK,EAAE;EAAEC,SAAS,EAAE,aAAa;EAAEE,GAAG,EAAE;AAAE,CAAC,EAAE,CAE7DJ,KAAK,CAACC,aAAa,CACf,OAAO,EACP;EAAEG,GAAG,EAAE,CAAC;EAAEO,OAAO,EAAE;AAAW,CAAC,EAC/B,UACJ,CAAC,EAEDX,KAAK,CAACC,aAAa,CAAC,OAAO,EAAE;EAAEG,GAAG,EAAE,CAAC;EAAED,EAAE,EAAE;AAAW,CAAC,CAAC,CAC3D,CAAC,EAEFH,KAAK,CAACC,aAAa,CAAC,KAAK,EAAE;EAAEC,SAAS,EAAE,aAAa;EAAEE,GAAG,EAAE;AAAE,CAAC,EAAE,CAE7DJ,KAAK,CAACC,aAAa,CACf,OAAO,EACP;EAAEG,GAAG,EAAE,CAAC;EAAEO,OAAO,EAAE;AAAW,CAAC,EAC/B,UACJ,CAAC,EAEDX,KAAK,CAACC,aAAa,CAAC,OAAO,EAAE;EAAEG,GAAG,EAAE,CAAC;EAAED,EAAE,EAAE,UAAU;EAAES,IAAI,EAAE;AAAW,CAAC,CAAC,CAC7E,CAAC,CACL,CAAC,CACL,CAAC,CAEV,CAAC;AAED,MAAMC,IAAI,GAAGC,QAAQ,CAACC,UAAU,CAACC,QAAQ,CAACC,aAAa,CAAC,OAAO,CAAC,CAAC;AAEjEJ,IAAI,CAACK,MAAM,CAACnB,SAAS,CAAC",
+    "ignoreList": []
+}
